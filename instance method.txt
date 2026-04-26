@@ -1,0 +1,23 @@
+class employee:
+    def __init__(self,e_id,e_name,e_salary):
+        self.e_id=e_id
+        self.e_name=e_name
+        self.e_salary=e_salary
+        self.e_company="Vstand4u"
+    def intro(self):
+       print("e_id:",self.e_id)
+       print("e_name:",self.e_name)
+       print("e_salary:",self.e_salary)
+       print("e_company:",self.e_company)
+    def do_job(self,role):
+        self.role=role
+        print(self.role)
+e1=employee(101,"Likhitha",50000)
+e1.intro()
+e1.do_job("Developer")
+e2=employee(102,"Kunal",60000)
+e2.intro()
+e2.do_job("Tester")
+e3=employee(103,"Vimal",70000)
+e3.intro()
+e3.do_job("Engineer")
